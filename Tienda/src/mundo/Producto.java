@@ -215,8 +215,9 @@ public class Producto {
      */
     public double darIVA() {
         return switch (this.tipo) {
-            case "DROGUERIA" -> 0.04;
-            case "PAPELERIA" -> 0.16;
+            case "drogueria" -> 0.12;
+            case "papeleria" -> 0.16;
+            case "supermercado" -> 0.04;    
             default -> 0.19;
         };
     }
